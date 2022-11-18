@@ -1,13 +1,16 @@
 import dataclasses as dt
 
+
 @dt.dataclass
 class Parent:
     name: str
     status: bool = dt.field(default=False, init=False)
 
+
 @dt.dataclass
 class Child(Parent):
     surname: str
+
 
 child = Child(name="Dan", surname="Didhat")
 print(f"status: {child.status}")

@@ -1,5 +1,6 @@
 from typing import List
 
+
 class DirtyClass:
 
     def __init__(self, name: str, glob_state: List = []):
@@ -8,7 +9,6 @@ class DirtyClass:
 
 
 if __name__ == "__main__":
-
     dirty_1 = DirtyClass("Dan")
     dirty_1.glob_state.append(1)
     dirty_2 = DirtyClass("Jojo")
@@ -19,7 +19,7 @@ if __name__ == "__main__":
     print(dirty_1.glob_state)
 
     dirty_3 = DirtyClass("kek")
-    print("new dirty_3 also get glob_state :)" )
+    print("new dirty_3 also get glob_state :)")
 
     dirty_4 = DirtyClass("no_glob", [])
     print("however dirty_4 has not glob, because we give new list")

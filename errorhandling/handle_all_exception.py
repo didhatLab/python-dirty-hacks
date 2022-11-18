@@ -1,7 +1,7 @@
 def func_with_error():
-
     a = 10 / 0
     return a
+
 
 if __name__ == "__main__":
 
